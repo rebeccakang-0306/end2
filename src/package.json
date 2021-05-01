@@ -1,0 +1,58 @@
+{
+  "name": "Digiceipt",
+  "version": "1.0.0",
+  "description": "Digiceipt App project for workshops in INFO30005",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Digiceipt",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.0.0-alpha.6",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.3",
+    "hbs": "^4.1.1",
+    "http": "0.0.1-security",
+    "moment": "^2.29.1",
+    "mongoose": "^5.9.7",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
+    "pug": "^3.0.2",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.0.0",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-scripts": "^4.0.3",
+    "request": "^2.88.2",
+    "serve-favicon": "^2.5.0",
+    "styled-components": "^5.2.3",
+    "type": "module"
+  },
+  "devDependencies": {
+    "@material-ui/core": "^4.11.3",
+    "axios": "^0.21.1",
+    "handlebars": "^4.5.0",
+    "react-router-dom": "^5.2.0",
+    "styled-table-component": "^4.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

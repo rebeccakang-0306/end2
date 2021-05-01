@@ -1,0 +1,149 @@
+table {
+    font-family: lucida sans unicode,lucida grande,Sans-Serif;
+    font-size: 14px;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.update-form{
+    display: block;
+    flex-direction: row;
+    padding: 5px;
+}
+
+
+th {
+    font-size: 19px;
+    font-weight: 10;
+    border-bottom: 2px solid #6678b1;
+    padding: 10px 8px;
+}
+
+td {
+    border-bottom: 1px solid #ccc;
+    vertical-align: center;
+    padding: 6px 8px;
+}
+
+.sc-fzoXzr{
+    float: left;
+    width: 10%;
+    margin-left: 0;
+    text-align: center;
+    background-color: #fff;
+}
+.sc-fznWqX{
+    float: left;
+    width: 10%;
+    margin-left: 0;
+    text-align: center;
+    background-color: #fff;
+}
+.ghMnBP{
+    float: left;
+    width: 10%;
+    margin-left: 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: white}
+
+tr:hover {background-color: #268bc6; color: white;}
+
+td.userData {
+    max-width: 250px;
+    width: 25%;
+}
+
+td.receiptData {
+    max-width: 150px;
+    width: 19%;
+}
+
+td.receiptDataPrice {
+    width: 5%;
+}
+
+td.receiptDataUpdate {
+    max-width: 250px;
+    width: 20%;
+}
+.usertype2 {
+    width: 270px;
+    height: 43px;
+    padding: 8px;
+    margin: 0.7px;
+    border-radius: 2px;
+    border: #d3d3d3 solid 1px;
+    color: #808080;
+}
+.usertype3 {
+    width: 345px;
+    height: 40px;
+    padding: 8px;
+    margin: 0.7px;
+    border-radius: 2px;
+    border: #d3d3d3 solid 1px;
+    color: #808080;
+}
+
+.usertype4 {
+    width: 210px;
+    height: 43px;
+    padding: 8px;
+    margin: 0.7px;
+    border-radius: 2px;
+    border: #d3d3d3 solid 1px;
+    color: #808080;
+}
+
+
+.usertype5 {
+    padding: 8px;
+    margin: 0.5px;
+    border-radius: 2px;
+    border: #f2f2f2 solid 1px;
+    width:200px;
+    height: 38px;
+
+}
+
+
+.pics6 .pics6_status2,.pics6 .pics6_status3,.pics6 .pics6_status4{
+    display: flex;
+    display: -webkit-flex;
+}
+
+.pics6 .pics6_status3 li{
+    width: 33%;
+    height: 100%;
+    text-align: center;}
+
+
+
+.rate {
+    letter-spacing: 4px;
+    color: #FF9C00;
+    position: relative;
+    font-family: sans-serif;
+    display: inline-flex;
+    line-height: 1;
+    font-size: 20px;}
+.rate__bg {
+    position: relative;
+    letter-spacing: 10px;
+    font-size: 40px;
+}
+.bg__realrate {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: width .5s;
+}

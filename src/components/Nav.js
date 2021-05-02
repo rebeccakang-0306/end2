@@ -9,7 +9,7 @@ export default function Nav() {
         return (
             <nav className={'NewNav'}>
                 <NavLink to="/users"> Users </NavLink>
-                <NavLink to="/receipts"> Surveys </NavLink>
+                <NavLink to="/surveyResult"> Surveys </NavLink>
                 <NavLink className={"Logout"} exact to = "/" > Logout </NavLink>
             </nav>
         );

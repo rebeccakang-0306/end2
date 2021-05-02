@@ -44,24 +44,24 @@ export class ReceiptTable extends React.Component {
                         <tr>
                             <th scope="col">UserName</th>
                             <th scope="col">UserType</th>
-                            <th scope="col">Photo1-front-profile</th>
-                            <th scope="col">Photo1-side-profile</th>
-                            <th scope="col">Photo2-front-profile</th>
-                            <th scope="col">Photo2-side-profile</th>
-                            <th scope="col">Photo3-front-profile</th>
-                            <th scope="col">Photo3-side-profile</th>
-                            <th scope="col">Photo4-front-profile</th>
-                            <th scope="col">Photo4-side-profile</th>
-                            <th scope="col">Photo5-front-profile</th>
-                            <th scope="col">Photo5-side-profile</th>
-                            <th scope="col">Photo6-front-profile</th>
-                            <th scope="col">Photo6-side-profile</th>
-                            <th scope="col">Photo7-front-profile</th>
-                            <th scope="col">Photo7-side-profile</th>
-                            <th scope="col">Photo8-front-profile</th>
-                            <th scope="col">Photo8-side-profile</th>
-                            <th scope="col">Photo9-front-profile</th>
-                            <th scope="col">Photo9-side-profile</th>
+                            <th scope="col">P1-front</th>
+                            <th scope="col">P1-side</th>
+                            <th scope="col">P2-front</th>
+                            <th scope="col">P2-side</th>
+                            <th scope="col">P3-front</th>
+                            <th scope="col">P3-side</th>
+                            <th scope="col">P4-front</th>
+                            <th scope="col">P4-side</th>
+                            <th scope="col">P5-front</th>
+                            <th scope="col">P5-side</th>
+                            <th scope="col">P6-front</th>
+                            <th scope="col">P6-side</th>
+                            <th scope="col">P7-front</th>
+                            <th scope="col">P7-side</th>
+                            <th scope="col">P8-front</th>
+                            <th scope="col">P8-side</th>
+                            <th scope="col">P9-front</th>
+                            <th scope="col">P9-side</th>
                             <th scope="col">Operation</th>
                         </tr>
                         </thead>

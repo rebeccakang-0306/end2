@@ -36,7 +36,7 @@ export default function App(){
                         <Nav />
                         <Users />
                     </Route>}
-                    {<Route path = "/receipts">
+                    {<Route path = "/surveyResult">
                         <Nav />
                         <Receipts />
                     </Route>}

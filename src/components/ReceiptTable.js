@@ -44,15 +44,24 @@ export class ReceiptTable extends React.Component {
                         <tr>
                             <th scope="col">UserName</th>
                             <th scope="col">UserType</th>
-                            <th scope="col">Photo1</th>
-                            <th scope="col">Photo2</th>
-                            <th scope="col">Photo3</th>
-                            <th scope="col">Photo4</th>
-                            <th scope="col">Photo5</th>
-                            <th scope="col">Photo6</th>
-                            <th scope="col">Photo7</th>
-                            <th scope="col">Photo8</th>
-                            <th scope="col">Photo9</th>
+                            <th scope="col">Photo1-front-profile</th>
+                            <th scope="col">Photo1-side-profile</th>
+                            <th scope="col">Photo2-front-profile</th>
+                            <th scope="col">Photo2-side-profile</th>
+                            <th scope="col">Photo3-front-profile</th>
+                            <th scope="col">Photo3-side-profile</th>
+                            <th scope="col">Photo4-front-profile</th>
+                            <th scope="col">Photo4-side-profile</th>
+                            <th scope="col">Photo5-front-profile</th>
+                            <th scope="col">Photo5-side-profile</th>
+                            <th scope="col">Photo6-front-profile</th>
+                            <th scope="col">Photo6-side-profile</th>
+                            <th scope="col">Photo7-front-profile</th>
+                            <th scope="col">Photo7-side-profile</th>
+                            <th scope="col">Photo8-front-profile</th>
+                            <th scope="col">Photo8-side-profile</th>
+                            <th scope="col">Photo9-front-profile</th>
+                            <th scope="col">Photo9-side-profile</th>
                             <th scope="col">Operation</th>
                         </tr>
                         </thead>
@@ -62,15 +71,24 @@ export class ReceiptTable extends React.Component {
                             return <Tr active key={survey._id}>
                                 <td>{survey.username}</td>
                                 <td>{survey.usertype}</td>
-                                <td>{survey.photo1}</td>
-                                <td>{survey.photo2}</td>
-                                <td>{survey.photo3}</td>
-                                <td>{survey.photo4}</td>
-                                <td>{survey.photo5}</td>
-                                <td>{survey.photo6}</td>
-                                <td>{survey.photo7}</td>
-                                <td>{survey.photo8}</td>
-                                <td>{survey.photo9}</td>
+                                <td>{survey.photo1f}</td>
+                                <td>{survey.photo1s}</td>
+                                <td>{survey.photo2f}</td>
+                                <td>{survey.photo2s}</td>
+                                <td>{survey.photo3f}</td>
+                                <td>{survey.photo3s}</td>
+                                <td>{survey.photo4f}</td>
+                                <td>{survey.photo4s}</td>
+                                <td>{survey.photo5f}</td>
+                                <td>{survey.photo5s}</td>
+                                <td>{survey.photo6f}</td>
+                                <td>{survey.photo6s}</td>
+                                <td>{survey.photo7f}</td>
+                                <td>{survey.photo7s}</td>
+                                <td>{survey.photo8f}</td>
+                                <td>{survey.photo8s}</td>
+                                <td>{survey.photo9f}</td>
+                                <td>{survey.photo9s}</td>
                                 <td><Receipt key={survey._id} {...survey} /> </td>
                             </Tr>
                         })}

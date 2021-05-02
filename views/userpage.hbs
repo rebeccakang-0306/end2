@@ -1,0 +1,96 @@
+<h1>Welcome to user page</h1>
+<section>
+    <h3>Create Receipt</h3>
+    <form action="/create-receipt" method="post">
+        <div class="input">
+            <label for="shop">Shop</label>
+            <input type="text" id="shop" name="shop">
+        </div>
+        <div class="input">
+            <label for="buyerID">Buyer ID</label>
+            <input type="text" id="buyerID" name="buyerID">
+        </div>
+        <div class="input">
+            <label for="description">Description</label>
+            <input type="text" id="description" name="description">
+        </div>
+        <div class="input">
+            <label for="Price">Price</label>
+            <input type="text" id="Price" name="Price">
+        </div>
+        <button type="submit">CREATE</button>
+    </form>
+</section>
+<section>
+    <h3>List All Receipts</h3>
+    <a href="/userpage/list-receipt">Load Receipts</a>
+    {{!--<a href="/userpage/list-receipt" id = "mylink" onclick = myFunction()>Load Receipts</a>--}}
+    <div>
+        {{# each items }}
+            <article class="item">
+                <div>ID: {{this._id}}</div>
+                <div>Shop: {{ this.shop }}</div>
+                <div>BuyerID: {{ this.buyerID }}</div>
+                <div>Description: {{ this.description }}</div>
+                <div>Price: {{ this.Price }}</div>
+            </article>
+        {{/each}}
+    </div>
+</section>
+
+<section>
+    <h3>List All Receipts for a user</h3>
+    <form action="/userpage/list-user-receipt/5ea410aee2e9a7ed17cd2857" method="post">
+        <div class="input">
+            <label for="id">ID</label>
+            <input type="text" id="id" name="id">
+        </div>
+        <button type="submit">SEARCH</button>
+    </form>
+</section>
+
+<section>
+    {{!--<a href="/userpage/list-user-receipt">Load Receipts</a>--}}
+    {{!--<a href="/userpage/list-receipt" id = "mylink" onclick = myFunction()>Load Receipts</a>--}}
+    <div>
+        <article class="item">
+            <div>USER ID: {{userReceipt._id}}</div>
+            <br/>
+            <div>
+                {{# each userReceipt.receipts}}
+                    <div>Receipt ID: {{this._id}}</div>
+                    <div>Shop: {{ this.shop }}</div>
+                    <div>BuyerID: {{ this.buyerID }}</div>
+                    <div>Description: {{ this.description }}</div>
+                    <div>Price: {{ this.Price }}</div>
+                    <br/>
+                {{/each}}
+            </div>
+        </article>
+    </div>
+</section>
+
+<section>
+    <h3>Delete Receipt</h3>
+    <form action="/delete-receipt" method="post">
+        <div class="input">
+            <label for="id">ID</label>
+            <input type="text" id="id" name="id">
+        </div>
+        <button type="submit">DELETE</button>
+    </form>
+</section>
+{{!--
+<script>
+    function changeID(){
+        var link = document.getElementById("userID");
+        link.innerHTML = "USER ID: " + window.location.href.split('/').pop();
+    }
+</script>
+<script>
+    function myFunction() {
+        var link = document.getElementById("mylink");
+        link.setAttribute("href", window.location.href + "/list-receipt" )
+    }
+</script>--}}
+

@@ -3,9 +3,15 @@
   "version": "1.0.0",
   "description": "Digiceipt App project for workshops in INFO30005",
   "main": "app.js",
+  "private": "true",
+  "engines": {
+ "npm": "7.6.2", "node": "14.16.0"
+  },
   "scripts": {
+    "heroku-postbuild": "npm install",
     "start": "node app.js",
-    "heroku-postbuild": "cd react-ui/ && npm install && npm run build"
+    "build": "react-scripts build",
+    "eject": "react-scripts eject"
   },
 
   "author": "Digiceipt",

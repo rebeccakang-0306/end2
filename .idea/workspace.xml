@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ab1fffa2-0e21-410d-b514-e3b950566436" name="Default Changelist" comment="second">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/receipt-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/receipt-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/submitresult.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/submitresult.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +33,6 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
-  </component>
   <component name="ProjectId" id="1pZHXCmsNCHlf5AppI1UJr9esjd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -46,7 +46,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.16.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.43" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/src/pages/PersonalReceipts.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -108,7 +108,11 @@
       <workItem from="1619930216041" duration="195000" />
       <workItem from="1619930423621" duration="7698000" />
       <workItem from="1620031976699" duration="3967000" />
-      <workItem from="1620198575771" duration="4109000" />
+      <workItem from="1620198575771" duration="4745000" />
+      <workItem from="1620268089575" duration="594000" />
+      <workItem from="1620284272783" duration="5080000" />
+      <workItem from="1620363394223" duration="13212000" />
+      <workItem from="1620378919149" duration="1071000" />
     </task>
     <task id="LOCAL-00001" summary="second">
       <created>1619927048068</created>
@@ -180,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620232016610</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="second">
+      <created>1620232586901</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1620232586901</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

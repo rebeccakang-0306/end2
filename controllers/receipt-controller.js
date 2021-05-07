@@ -5,7 +5,7 @@ require('../models/db.js');
 mongoose.set('useFindAndModify', false);
 var Receipt = mongoose.model('receipts');
 var Users = mongoose.model('users');
-var Submit = mongoose.model('submit');
+var Submit = mongoose.model('submit1');
 
 var listAllReceipt = async (req, res) => {
     try {
@@ -160,7 +160,8 @@ var submitRate = async (req, res) => {
     console.log("1111111")
     try{
         let item = {
-            username:req.body.username,
+          // userid:req.body.userid,
+         username:req.body.username,
             usertype:req.body.usertype,
             Muzzle1:req.body.Muzzle1,
             Muzzle2:req.body.Muzzle2,
@@ -168,28 +169,46 @@ var submitRate = async (req, res) => {
             Muzzle4:req.body.Muzzle4,
             Muzzle5:req.body.Muzzle5,
             Muzzle6:req.body.Muzzle6,
+            Muzzle7:req.body.Muzzle7,
+            Muzzle8:req.body.Muzzle8,
+            Muzzle9:req.body.Muzzle9,
+            Muzzle10:req.body.Muzzle10,
+            Wrinkle10:req.body.Wrinkle10,
+            Wrinkle9:req.body.Wrinkle9,
+            Wrinkle8:req.body.Wrinkle8,
+            Wrinkle7:req.body.Wrinkle7,
             Wrinkle6:req.body.Wrinkle6,
             Wrinkle5:req.body.Wrinkle5,
             Wrinkle4:req.body.Wrinkle4,
             Wrinkle3:req.body.Wrinkle3,
             Wrinkle2:req.body.Wrinkle2,
             Wrinkle1:req.body.Wrinkle1,
+            Nostril10:req.body.Nostril10,
+            Nostril9:req.body.Nostril9,
+            Nostril8:req.body.Nostril8,
+            Nostril7:req.body.Nostril7,
+            Nostril6:req.body.Nostril6,
+            Nostril5:req.body.Nostril5,
+            Nostril4:req.body.Nostril4,
+            Nostril3:req.body.Nostril3,
+            Nostril2:req.body.Nostril2,
+            Nostril1:req.body.Nostril1,
         };
         // Add the new receipt to user collection
         let data = new Submit(item);
-        await data.save();
-        res.alert('Thanks');
+        console.log(data)
+
+        try {
+            await data.save();
+        } catch (e) {
+            console.log(e); // 30
+        }
 
 
-        await Users.findById(req.body.username,function(err) {
-            if (err) {
-                console.error('error, no users found');
-            }
-            console.log(data["_id"]);
-            res.send(data["_id"]);
+        console.log(1)
+        console.log(data["_id"]);
+        res.send(data["_id"]);
 
-        });
-        res.send("success");
     }catch(e){
         res.status(400);
     }

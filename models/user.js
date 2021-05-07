@@ -8,7 +8,7 @@ var userSchema = new Schema({
     password: {type: String, required: true},
     firstname: String,
     lastname: String,
-    usertype:String,
+    usertype:{type: String, required: true},
 }, {collection: 'Users'});
 
 mongoose.model('users', userSchema)

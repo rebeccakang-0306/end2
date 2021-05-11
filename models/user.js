@@ -6,8 +6,10 @@ var Schema = mongoose.Schema;
 var userSchema = new Schema({
     username:  {type: String, required: true, unique: true},
     password: {type: String, required: true},
-    firstname: String,
-    lastname: String,
+    dogShow: String,
+    dogOwner: String,
+    pugOwner:String,
+    workDog:String,
     usertype:{type: String, required: true},
 }, {collection: 'Users'});
 

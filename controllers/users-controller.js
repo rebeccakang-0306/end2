@@ -32,8 +32,10 @@ var createUser = async (req, res) => {
         let item = {
             username:req.body.username,
             password:req.body.password,
-            firstname:req.body.firstname,
-            lastname:req.body.lastname,
+            dogShow: req.body.dogShow,
+            dogOwner: req.body.dogOwner,
+            pugOwner:req.body.pugOwner,
+            workDog:req.body.workDog,
             usertype:req.body.usertype
         };
         let data = new Users(item);
@@ -82,8 +84,10 @@ var updateUserInfo = async (req, res) => {
             return res.send("Author not found");
         }
 
-        users.firstname = newUserInfo.firstname;
-        users.lastname = newUserInfo.lastname;
+        users.dogShow = newUserInfo.dogShow;
+        users.dogOwner = newUserInfo.dogOwner;
+        users.pugOwner = newUserInfo.pugOwner;
+        users.workDog = newUserInfo.workDog
         users.username = newUserInfo.username;
         users.password = newUserInfo.password;
         users.usertype = newUserInfo.usertype
